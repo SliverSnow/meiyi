@@ -1,0 +1,22 @@
+<!--index.wxml-->
+
+<view>
+<view class="container">首页</view>
+
+   <swiper class='lunbo' indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:{{height8*2 +80}}rpx;width:{{width*2}}rpx">
+
+     <swiper-item> 
+     <image mode="scaleToFill" src="../../images/20191120153904.png" ></image>
+          </swiper-item>
+
+          <swiper-item> 
+      <image mode="scaleToFill" src="../../images/20191120143241.jpg"></image>
+          </swiper-item>  
+
+<swiper-item>
+      <image mode="scaleToFill"  src="../../images/20191120153842.png"></image>
+          </swiper-item> 
+      </swiper>
+  
+  </view>
+<icon class=" iconfont icon-xingxing1"></icon>
