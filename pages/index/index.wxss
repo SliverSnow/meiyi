@@ -3,20 +3,103 @@
 page {
   background: #f9f9f9;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
-
+/* 轮播宽度 */
 .lunbo{
   width: 100%;
-  
-  
+}
+
+/* 轮播图片宽度 */
+.lunbo image{
+  width: 100%;
+}
+
+/* .button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 设置按钮居中并且纵向排列*/
+
+
+/* 图片尺寸适应参数间隔 */
+.picture image{
+  height: 100rpx;
+  width: 110rpx;
+  justify-content: space-between;
+  padding-left: 36rpx;
+  padding-right: 36rpx;
+}
+/* background-size:contain;等比缩放 */
+
+/* 按钮适应间隔 */
+ .but button{
+   border: 0;
+   justify-content: space-between;
+   padding-left: 60rpx;
+  padding-right: 60rpx;
+ }
+
+/* 广告区先用图片进行替代 */
+.advert{
+  width: 100%;
+}
+.advert image{
+  width: 100%;
+  height: 200rpx;
+}
+
+.bnt button{
+  /* 使用 flex 布局的话需要显式的声明 page页面已声明 */
+   border: 0;
+   flex-direction: row; 
+   justify-content: space-around;
+   width: 50%;
+/* 加上宽度可以左右排列 */
 }
 
 
-.lunbo image{
-  width: 100%
+/* 自定义button样式颜色 */
+/* 加上!important是为了将样式设为最高级别 */
+/* .bnt.active{
+  color: #fff !important;
+  background: #ff9537 !important;
+} */
+
+/* 圈定小框框区域 并实现滚动条的幅度区域 内容过多便可以滑动 内容过少隐藏状态*/
+.flex-page view{
+  width: 100%;
+  height: 40%;
+  border:1px solid rgb(152, 245, 183);
+  overflow:scroll;
+}
+/* .flex-page view{ */
+  /* width: 200rpx;
+  height: 200rpx; */
+  /* font-size: 40rpx; */
+  /* color: white; */
+  /* text-align: center; */
+  /* line-height: 200rpx; */
+/* position: fixed; 
+bottom: 0; */
+/* } */
+
+/* 底部菜单导航栏 */
+.page1 button{
+
+width: 33%;
+flex-direction: row;
+
+}
+
+/* 底部二维码图标按钮 */
+.page1 image{
+
+  height: 60rpx;
+  width: 70rpx;
 }
 
 .userinfo, .uploader, .tunnel {

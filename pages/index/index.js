@@ -20,6 +20,8 @@ Page({
     }
     
 
+//门店1的点击跳转事件
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
