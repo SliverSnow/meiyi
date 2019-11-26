@@ -1,0 +1,9 @@
+/* pages/wash/list.wxss 标题居中 */
+.c1{
+  text-align: center;
+}
+
+/* 具体条款侧边滑动条 */
+.deal{
+overflow: scroll;
+}

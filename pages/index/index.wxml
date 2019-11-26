@@ -47,9 +47,9 @@
 <image src="../../images/tree.png" mode="aspectFill" ></image>
  </view>
 
-<!-- 按钮参数 -->
+<!-- 按钮参数 绑定的事件名称：bindViewTap-->
 <view class="but">
-<button size="mini" type="default" fromTyoe="reset" >洗衣</button>
+<button size="mini" type="default" fromTyoe="reset" bindtap="bindViewTap" class="wash">洗衣</button>
 
 <!--图标玫瑰花样式 <image class="iconimage" src="../../images/icon.ico/"></image> -->
 

@@ -11,6 +11,24 @@ Page({
     requestResult: ''
   },
 
+//洗衣事件跳转处理函数
+bindViewTap: function(){
+  wx.navigateTo({
+    url: '../wash/wash',
+  })
+},
+onLoad:function(){
+
+  },//html界面要在app.json里面注册
+goToTalkPage:function(param){
+wx.navigateTo({
+  url: '/pages/wash',
+})
+},
+
+
+
+
   onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({

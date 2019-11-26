@@ -1,0 +1,10 @@
+/* pages/choose/choose.wxss */
+.choose{
+text-align: center;
+}
+
+
+.btn-getphone image{
+  display: flex;
+  width: 100%;
+}
