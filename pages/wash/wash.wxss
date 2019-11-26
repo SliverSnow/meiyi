@@ -1,9 +1,33 @@
 /* pages/wash/list.wxss 标题居中 */
 .c1{
   text-align: center;
+  border-bottom: 1px solid rgb(79, 231, 125);
+  margin-top: 30rpx;
+  
 }
 
 /* 具体条款侧边滑动条 */
 .deal{
-overflow: scroll;
+ overflow: scroll;
+
+}
+
+
+/* 同意位置 */
+.bt{
+  
+  align-content: center;
+}
+
+.box{
+  color: rgb(49, 197, 116);
+  position: fixed;
+  bottom: 500;
+}
+
+.bo{
+ display: flex;
+ flex-direction: row;
+ position: fixed;
+ bottom: 0; 
 }

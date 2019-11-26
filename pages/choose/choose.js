@@ -54,7 +54,7 @@ wx.getUserInfo({
       //用户按了拒绝按钮
       wx.showModal({
         title: '警告',
-        content: '您点击了拒绝授权，将无法进入小程序，请授权之后再进入!!!',
+        content: '您点击了拒绝授权，将无法进入小程序，请授权之后再进入!',
         showCancel: false,
         confirmText: '返回授权',
         success: function (res) {
@@ -65,7 +65,14 @@ wx.getUserInfo({
         }
       });
     }
-  }
+  },
+
+// 授权页面跳转首页的绑定事件
+bindHomePage:function(){
+wx.navigateTo({
+  url: '../index/index',
+})
+}
 })
 
 

@@ -1,10 +1,45 @@
 /* pages/choose/choose.wxss */
 .choose{
+margin-top: 20rpx;
 text-align: center;
+color: #03d182;
 }
 
 
-.btn-getphone image{
-  display: flex;
-  width: 100%;
+.header{
+/* border-bottom: 1px solid #ccc;加一条灰色的分割线下边框属性 */
+border-bottom: 1px solid #ccc;
+text-align: center;
+margin-top: 90rpx;
+}
+
+.header image{
+  height: 700rpx;
+}
+
+/* margin-bottom该元素的下外边距 该元素与下一个元素的距离*/
+.content{
+margin-bottom: 50rpx;
+margin-top: 90rpx;
+color: #05ca7e;
+display: block;
+}
+
+/* display: block;一行字体生成的类型块级元素并且和margin-top一起使用才会有行间距 */
+.content text{
+display: block;
+color: #05ca7e;
+margin-top: 50rpx;
+
+}
+
+/* 底部bottom 
+position: fixed;
+top: 0;
+位置固定 顶部0   */
+.bottom{
+position: fixed;
+bottom: 0;
+height: 120rpx;
+line-height: 90rpx;
 }
