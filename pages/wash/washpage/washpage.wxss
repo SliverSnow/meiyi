@@ -1,0 +1,5 @@
+/* pages/wash/washpage/washpage.wxss */
+.buttonType{
+display: flex;
+flex-direction: column;
+}

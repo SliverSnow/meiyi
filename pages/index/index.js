@@ -17,6 +17,22 @@ bindViewTap: function(){
     url: '../wash/wash',
   })
 },
+
+//取衣事件跳转按钮
+  bindTakeClothes:function(){
+wx.navigateTo({
+  url: '../take/take',
+})
+  },
+
+//二维码跳转按钮
+bindQR:function(){
+  wx.navigateTo({
+    url: '../index/QR/QR',
+  })
+},
+
+
 onLoad:function(){
 
   },//html界面要在app.json里面注册

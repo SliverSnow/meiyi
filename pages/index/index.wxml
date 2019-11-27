@@ -53,8 +53,7 @@
 
 <!--图标玫瑰花样式 <image class="iconimage" src="../../images/icon.ico/"></image> -->
 
-<button size="mini" type="default" fromTyoe
-="reset">取衣</button>
+<button size="mini" type="default" fromTyoe="reset" bindtap="bindTakeClothes" class="take">取衣</button>
 
 
 <button size="mini" type="default" fromTyoe
@@ -78,11 +77,13 @@
 
 
 <!-- 门店 智能柜 分区按钮 -->
-<view class="bnt">
+<!-- style="block" wx:if="{{type=='门店'}}" bindtap="chooseShop" -->
+<!-- style="none" wx:if="{{'智能柜'}}" bindtap="chooseArk" -->
+<view class="bnt" >
 
-<button size="mini" type="default" fromTyoe="reset">门店</button>
+<button size="mini" type="default" fromTyoe="reset" >门店</button>
 
-<button size="mini" type="default" fromTyoe="reset">智能柜</button>
+<button size="mini" type="default" fromTyoe="reset" >智能柜</button>
 
 </view>
 
@@ -148,7 +149,7 @@ style="position:fixed;top:0;"-->
 <button size="mini" type="default" form-type="reset" >首页</button>
 
 <button class="QR" size="mini" type="default"  form-type="reset" >
-<image src="../../images/QR.png" ></image>
+<image src="../../images/QR.png" bindtap="bindQR"></image>
 </button>
 
 <button size="mini" type="default" form-type="reset" >我的</button>

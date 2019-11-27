@@ -1,0 +1,10 @@
+<!--pages/wash/washpage/washpage.wxml-->
+<view class="buttonType">
+<button size="mini" type="default" form-type="reset">居家类</button>
+<button size="mini" type="default" form-type="reset">皮草类</button>
+<button size="mini" type="default" form-type="reset">大衣类</button>
+<button size="mini" type="default" form-type="reset">羽绒服类</button>
+<button size="mini" type="default" form-type="reset">真丝类</button>
+<button size="mini" type="default" form-type="reset">绸缎类</button>
+<button size="mini" type="default" form-type="reset">夏季类</button>
+</view>

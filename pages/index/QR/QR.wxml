@@ -1,0 +1,9 @@
+<!--pages/index/QR/QR.wxml-->
+<view class="qr">
+<image  src="../../../images/meiyi.png" mode="widFix"></image>
+
+</view>
+
+<view class="btt">
+<button size="default" type="primary" >扫码进行开柜操作</button>
+</view>

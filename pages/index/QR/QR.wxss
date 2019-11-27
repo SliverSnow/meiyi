@@ -1,0 +1,15 @@
+/* pages/index/QR/QR.wxss */
+.qr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr image{
+  margin-top: 150px;
+  height: 700rpx;
+}
+
+.btt{
+  margin-top: 50px;
+}

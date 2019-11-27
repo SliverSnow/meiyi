@@ -9,20 +9,18 @@
 /* 具体条款侧边滑动条 */
 .deal{
  overflow: scroll;
-
 }
 
 
 /* 同意位置 */
 .bt{
-  
   align-content: center;
 }
 
 .box{
   color: rgb(49, 197, 116);
   position: fixed;
-  bottom: 500;
+  bottom: 40px;
 }
 
 .bo{
