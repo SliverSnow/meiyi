@@ -41,15 +41,15 @@
 
 <!-- 四个小按钮横排排列 一个view里面横排，不同view之间为列，竖排-->
 
-<image src="../../images/201911221714.png" mode="aspectFill" ></image>
-<image src="../../images/pot1.png" mode="aspectFill"></image>
-<image src="../../images/leaf.png"  mode="aspectFill" ></image>
-<image src="../../images/tree.png" mode="aspectFill" ></image>
+<image src="../../images/water.png" mode="aspectFit" ></image>
+<image src="../../images/heart.png" mode="aspectFit"></image>
+<image src="../../images/star.png"  mode="aspectFit" ></image>
+<image src="../../images/label.png" mode="aspectFit" ></image>
  </view>
 
 <!-- 按钮参数 绑定的事件名称：bindViewTap-->
 <view class="but">
-<button size="mini" type="default" fromTyoe="reset" bindtap="bindViewTap" class="wash">洗衣</button>
+<button size="mini" type="default" fromTyoe="reset" bindtap="bindViewTap" class="wash" >洗衣</button>
 
 <!--图标玫瑰花样式 <image class="iconimage" src="../../images/icon.ico/"></image> -->
 
@@ -139,6 +139,9 @@
 <text>树高卡地亚店
 八号店</text>
 绵阳市创业大道树高卡地亚1-1-11号
+
+
+
 </view>
 </view>
 
@@ -146,13 +149,13 @@
 <!-- 底部导航栏 固定底部按钮可以写在view或者buttom中  
 style="position:fixed;top:0;"-->
 <view class="page1" >
-<button size="mini" type="default" form-type="reset" >首页</button>
+<button size="default" type="default" form-type="reset">首页</button>
 
-<button class="QR" size="mini" type="default"  form-type="reset" >
+<button class="QR" size="default" type="default"  form-type="reset" >
 <image src="../../images/QR.png" bindtap="bindQR"></image>
 </button>
 
-<button size="mini" type="default" form-type="reset" >我的</button>
+<button size="default" type="default" form-type="reset" >我的</button>
 </view>
 
 

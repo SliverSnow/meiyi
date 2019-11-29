@@ -4,7 +4,7 @@
     "pages/index/index",
     "pages/index/QR/QR",
     "pages/logs/logs",
-    "paes/wash/wash",
+    "pages/wash/wash",
     "pages/take/take",
     "pages/wash/washpage/washpage",
     "pages/login/login"
@@ -15,6 +15,6 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "cloud": true,
+  "sitemapLocation": "sitemap89.json"
 }

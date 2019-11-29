@@ -2,7 +2,7 @@
 .choose{
 margin-top: 20rpx;
 text-align: center;
-color: #03d182;
+/* color: #03d182; */
 }
 
 
@@ -21,14 +21,14 @@ margin-top: 90rpx;
 .content{
 margin-bottom: 50rpx;
 margin-top: 90rpx;
-color: #05ca7e;
+/* color: #05ca7e; */
 display: block;
 }
 
 /* display: block;一行字体生成的类型块级元素并且和margin-top一起使用才会有行间距 */
 .content text{
 display: block;
-color: #05ca7e;
+/* color: #05ca7e; */
 margin-top: 50rpx;
 
 }
@@ -41,5 +41,6 @@ top: 0;
 position: fixed;
 bottom: 0;
 height: 120rpx;
-line-height: 90rpx;
+line-height: 110rpx;
+/* line-height: 110rpx;按钮中文字的位置 */
 }

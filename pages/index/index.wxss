@@ -27,6 +27,7 @@ page {
 
 /* 图片尺寸适应参数间隔 */
 .picture image{
+  margin-top: 5px;
   height: 100rpx;
   width: 110rpx;
   justify-content: space-between;
@@ -38,6 +39,7 @@ page {
 /* 按钮适应间隔 */
  .but button{
    border: 0;
+   width: 25%;
    justify-content: space-between;
    padding-left: 60rpx;
   padding-right: 60rpx;
@@ -88,16 +90,22 @@ bottom: 0; */
 /* } */
 
 /* 底部菜单导航栏 */
-.page1 button{
 
-width: 33%;
-flex-direction: row;
-
+.page1 {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+ 
 }
+.page1 button{
+width: 33%;
+}
+
 
 /* 底部二维码图标按钮 */
 .page1 image{
-
+  margin-top: 7px;
   height: 60rpx;
   width: 70rpx;
 }
