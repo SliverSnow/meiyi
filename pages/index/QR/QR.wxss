@@ -1,15 +1,30 @@
 /* pages/index/QR/QR.wxss */
 .qr{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
+}
+/*  */
+.qr text{
+  margin-top: 50px;
+  border-bottom: 10px solid #ccc;
 }
 
 .qr image{
-  margin-top: 150px;
-  height: 700rpx;
+  margin-top: 80px;
+  height: 400rpx;
+
 }
 
 .btt{
+  flex-direction: column;
+  justify-content: space-around;
   margin-top: 50px;
 }
+
+.btt button{
+  margin-bottom: 20px;
+}
+

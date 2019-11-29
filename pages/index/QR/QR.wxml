@@ -1,8 +1,22 @@
 <!--pages/index/QR/QR.wxml-->
 <view class="qr">
-<image  src="../../../images/meiyi.png" mode="widFix"></image>
+<image  src="../../../images/logo.jpg" ></image>
+<text>扫码进行快捷开柜操作</text>
 </view>
 
+
+
 <view class="btt">
-<button size="default" type="primary" >扫码进行开柜操作</button>
+<view>
+<button size="default" type="primary" class="btt1">洗衣</button>
+</view>
+
+<view>
+<button size="default" type="primary" class="btt2">取衣</button>
+</view>
+
+<view>
+<button size="default" type="primary" class="btt3">寄存</button>
+</view>
+
 </view>
