@@ -22,9 +22,12 @@
   flex-direction: column;
   justify-content: space-around;
   margin-top: 50px;
+  border-radius: 150rpx;
 }
 
 .btt button{
-  margin-bottom: 20px;
+  width: 80%;
+  margin-bottom: 35px;
+  border-radius: 150rpx;
 }
 

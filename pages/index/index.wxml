@@ -53,11 +53,10 @@
 
 <!--图标玫瑰花样式 <image class="iconimage" src="../../images/icon.ico/"></image> -->
 
-<button size="mini" type="default" fromTyoe="reset" bindtap="bindTakeClothes" class="take">取衣</button>
+<button size="mini" type="default" fromTyoe="reset" bindtap="bindTakeClothes" class="take" >取衣</button>
 
 
-<button size="mini" type="default" fromTyoe
-="reset">充值</button>
+<button size="mini" type="default" fromTyoe="reset" >充值</button>
 
 
   <button size="mini" type="default" fromTyoe
@@ -75,17 +74,23 @@
 </image>
 </view>
 
+<!-- <button size="mini" type="default" fromTyoe="reset">门店</button>
 
+<button size="mini" type="default" fromTyoe="reset" >智能柜</button -->
 <!-- 门店 智能柜 分区按钮 -->
 <!-- style="block" wx:if="{{type=='门店'}}" bindtap="chooseShop" -->
 <!-- style="none" wx:if="{{'智能柜'}}" bindtap="chooseArk" -->
-<view class="bnt" >
-
-<button size="mini" type="default" fromTyoe="reset" >门店</button>
-
-<button size="mini" type="default" fromTyoe="reset" >智能柜</button>
-
+<view class="bnt">
+<view class="shop" data-current="0" bindtap="checkCurrent">
+门店
 </view>
+</view>
+<swiper-item>
+
+</swiper-item>
+
+
+
 
 
 <!-- 门店信息+地图 -->
@@ -93,55 +98,77 @@
 <!-- 门店 滚动条是最外边的view 包含里面的页面或文字 -->
 <view class="flex-page" bindtap="md1" >
 <!-- style="white-space: pre-line;"文字上方留出空白段 -->
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-一号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+<view class="contain">
+<text class="text1">
+万达公馆店
+电话：0816-2996429
+地址：万达公馆A区2栋-2铺
+</text>
 </view>
 
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-二号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+<view class="contain">
+<text class="text2">
+二十一世纪花园店
+电话：0816-2202766
+地址：绵阳市普明南路东段21世纪花园
+</text>
 </view>
 
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-三号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+
+<view class="contain">
+<text class="text3">
+树高卡地亚店
+电话：0816-2883286
+地址：绵阳市创业大道树高卡地亚1-1-11号
+</text>
 </view>
 
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-四号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+<view class="contain">
+<text class="text4">
+阳光曼哈顿店
+电话：0816-2847075
+地址：绵阳市涪城区御林街49号
+</text>
 </view>
 
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-五号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+<view class="contain">
+<text class="text5">
+奥林春天店
+电话：0816-2853626
+地址：绵阳市奥林春天二期4栋103-3号
+</text>
 </view>
 
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-六号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+<view class="contain">
+<text class="text6">
+长虹世纪店
+电话：0816-2380327
+地址：绵阳市涪城区平政七队迪亨酒店斜对面
+</text>
 </view>
 
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-七号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+<view class="contain">
+<text class="text7">
+华润中央公园店
+电话：0816-2199129
+地址：绵阳市科创园区华润中央公园
+</text>
 </view>
 
-<view style="white-space:pre-line">
-<text>树高卡地亚店
-八号店</text>
-绵阳市创业大道树高卡地亚1-1-11号
+<view class="contain">
+<text class="text8">
+南河店
+电话：0816-2176429
+地址：绵阳市南河金佳城南名著
+</text>
+</view>
 
-
-
+<view class="contain">
+<text class="text9">
+福临大都会店
+电话：0816-2924253
+地址：绵阳市富临大都会5栋1单元6号
+</text>
 </view>
 </view>
 

@@ -5,14 +5,18 @@
 </view>
 
 
-
+<!--  url="../index/QR/QR?title=QR" hover-class="QR-hover" class="navi" -->
 <view class="btt">
 <view>
+<navigator url="../../wash/wash?title=wash" hover-class="wash-hover" class="washClothes">
 <button size="default" type="primary" class="btt1">洗衣</button>
+</navigator>
 </view>
 
 <view>
+<navigator url="../../take/take?title=take" hover-class="take-hover" class="takePage">
 <button size="default" type="primary" class="btt2">取衣</button>
+</navigator>
 </view>
 
 <view>

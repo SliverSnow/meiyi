@@ -1,1 +1,15 @@
 /* pages/take/take.wxss */
+.scan button{
+  display: flex;
+  margin-top: 70%;
+  background-color: rgb(226, 221, 221);
+  justify-content: center;
+  justify-items: center;
+  border-radius: 180rpx;
+}
+
+.no button{
+  margin-top: 50rpx;
+  border-radius: 180rpx;
+  background-color: rgb(226, 221, 221);
+}

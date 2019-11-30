@@ -1,0 +1,10 @@
+<!--pages/text/text.wxml-->
+<view class="bnt">
+<view class="shop" data-current="0" bindtap="checkCurrent">
+门店
+</view>
+
+<view class="ark" data-current="1" bindlongtap="checkCurrent">智能柜</view>
+</view>
+
+<swiper current=""></swiper>

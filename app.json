@@ -1,9 +1,9 @@
 {
   "pages": [
+    
     "pages/choose/choose",
     "pages/index/index",
     "pages/index/QR/QR",
-    "pages/logs/logs",
     "pages/wash/wash",
     "pages/take/take",
     "pages/wash/washpage/washpage",

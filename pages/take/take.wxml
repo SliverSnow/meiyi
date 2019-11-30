@@ -1,2 +1,16 @@
 <!--pages/take/take.wxml-->
-<text>pages/take/take.wxml</text>
+<view class="scan">
+<button bindtap="getScancode">开柜扫一扫</button>
+<view wx:if="{{result !=''}}">
+<view>
+<text>
+扫码内容：{{result}}
+</text>
+</view>
+</view>
+</view>
+
+
+<view class="no">
+<button bindtap="getBack">取消扫描</button>
+</view>
