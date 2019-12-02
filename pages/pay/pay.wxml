@@ -1,0 +1,23 @@
+<!--pages/pay/pay.wxml-->
+<!-- 活动块 -->
+
+<view class="pay1">
+<text>充值活动详情</text>
+
+<view class="border"></view>
+
+<!-- 第一个大块 -->
+<view class="pay2">
+
+</view>
+
+<!-- 充值按钮块 -->
+<view class="pay3">充值金额选择</view>
+
+<view class="pay4"></view>
+
+<!-- 第二个大块 -->
+<view class="pay5"></view>
+
+
+</view>

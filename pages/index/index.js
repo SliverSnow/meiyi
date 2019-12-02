@@ -24,4 +24,12 @@ wx.navigateTo({
   url: '../take/take',
 })
   },
+
+
+  //充值事件跳转函数
+  bindPayPage:function(){
+    wx.navigateTo({
+      url: '../pay/pay',
+    })
+  },
 })

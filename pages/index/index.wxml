@@ -56,7 +56,7 @@
 <button size="mini" type="default" fromTyoe="reset" bindtap="bindTakeClothes" class="take" >取衣</button>
 
 
-<button size="mini" type="default" fromTyoe="reset" >充值</button>
+<button size="mini" type="default" fromTyoe="reset" bindtap="bindPayPage" class="pay">充值</button>
 
 
   <button size="mini" type="default" fromTyoe
@@ -73,25 +73,17 @@
 <image mode="scaleToFill" src="../../images/green.png">
 </image>
 </view>
+<view class="bnt">
+<button size="mini" type="default" fromTyoe="reset">门店</button>
 
-<!-- <button size="mini" type="default" fromTyoe="reset">门店</button>
-
-<button size="mini" type="default" fromTyoe="reset" >智能柜</button -->
+<button size="mini" type="default" fromTyoe="reset" >智能柜</button>
 <!-- 门店 智能柜 分区按钮 -->
 <!-- style="block" wx:if="{{type=='门店'}}" bindtap="chooseShop" -->
 <!-- style="none" wx:if="{{'智能柜'}}" bindtap="chooseArk" -->
-<view class="bnt">
-<view class="shop" data-current="0" bindtap="checkCurrent">
-门店
+
+<!-- <view class="shop" data-current="0" bindtap="checkCurrent">
+门店 -->
 </view>
-</view>
-<swiper-item>
-
-</swiper-item>
-
-
-
-
 
 <!-- 门店信息+地图 -->
 

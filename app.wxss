@@ -6,6 +6,11 @@
   box-sizing: border-box;
 } 
 
+/* 定义分割线全局样式 */
+
+
+
+
 button {
   background: initial;
 }

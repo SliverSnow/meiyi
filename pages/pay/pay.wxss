@@ -1,0 +1,37 @@
+/* pages/login/login.wxss */
+/*   "navigationStyle":"custom", */
+.pay1 text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+
+.border{
+  margin-top: 30rpx;
+  border-bottom: 5rpx solid #D3F1F8;
+}
+
+.pay2{
+  height: 600rpx;
+  background-color: #ccc;
+  border-bottom: 5rpx solid #D3F1F8;
+}
+
+.pay3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30rpx;
+ 
+}
+
+.pay4{
+ border-bottom: 5rpx solid #D3F1F8;
+ margin-top: 30rpx;
+}
+
+.pay5{
+height: 700rpx;
+background-color: #ccc;
+}

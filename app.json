@@ -1,18 +1,17 @@
 {
   "pages": [
-    
+    "pages/pay/pay",
     "pages/choose/choose",
     "pages/index/index",
     "pages/index/QR/QR",
     "pages/wash/wash",
     "pages/take/take",
-    "pages/wash/washpage/washpage",
-    "pages/login/login"
+    "pages/wash/washpage/washpage"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#E6E6E6",
+    "navigationBarTitleText": "美依",
     "navigationBarTextStyle": "black"
   },
   "cloud": true,
