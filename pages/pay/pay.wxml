@@ -17,7 +17,12 @@
 <view class="pay4"></view>
 
 <!-- 第二个大块 -->
-<view class="pay5"></view>
+<view class="pay5">
+<view>
+<button size="default" form-type="reset" type="default">充200送100</button>
+</view>
+</view>
+
 
 
 </view>

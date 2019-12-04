@@ -1,184 +1,222 @@
 <!--index.wxml-->
 
-<view>
-<!-- <view class="container">首页</view> -->
+<view class="main">
+    <!-- <view class="container">首页</view> -->
 
-<!-- 1.轮播图片 -->
-   <swiper class='lunbo' indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:{{height8*2 +80}}rpx;width:{{width*2}}rpx">
+    <!-- 1.轮播图片 -->
+      <swiper class='lunbo' indicator-dots="true" autoplay="true" interval="4000" duration="1000" style="height:{{height8*2 +80}}rpx;width:{{width*2}}rpx">
 
-     <swiper-item> 
-     <!-- 图片宽度自适应设置 -->
-     <image mode="aspectFill" src="../../images/20191120153904.png" ></image>
-          </swiper-item>
+        <swiper-item> 
+        <!-- 图片宽度自适应设置 -->
+        <image mode="aspectFill" src="../../images/homebanner.png" ></image>
+              </swiper-item>
 
-          <swiper-item> 
-      <image mode="aspectFill" src="../../images/20191120143241.jpg"></image>
-          </swiper-item>  
+              <swiper-item> 
+          <image mode="aspectFill" src="../../images/20191120143241.jpg"></image>
+              </swiper-item>  
 
-<swiper-item>
-      <image mode="aspectFill"  src="../../images/20191120153842.png"></image>
-          </swiper-item> 
-      </swiper>
-  
-  <!-- 2.图标按钮 -->
-  <view class="picture">
-  
-  <!-- 设置按钮尺寸大小 -->
-<!-- <button size="default">bling</button> -->
-<!-- <button size="mini">Content</button> -->
+    <swiper-item>
+          <image mode="aspectFill"  src="../../images/homebanner1.png"></image>
+              </swiper-item> 
+          </swiper>
+      
+      <!-- 2.图标按钮 -->
+      <view class="picture">
+      
+      <!-- 设置按钮尺寸大小 -->
+    <!-- <button size="default">bling</button> -->
+    <!-- <button size="mini">Content</button> -->
 
-<!-- 设置按钮的类型 -->
-<!-- <button type="default">Content</button> 小长方形绿色字体默认灰色背景-->
-<!-- <button type="primary">Content</button> 白色字体绿色背景-->
-<!-- <button type="warn">Content</button> 红色字体灰色背景-->
+    <!-- 设置按钮的类型 -->
+    <!-- <button type="default">Content</button> 小长方形绿色字体默认灰色背景-->
+    <!-- <button type="primary">Content</button> 白色字体绿色背景-->
+    <!-- <button type="warn">Content</button> 红色字体灰色背景-->
 
-<!-- plain设置按钮是否透明 disabled是否禁用 loading加载状态 fromTyoe按钮响应-->
+    <!-- plain设置按钮是否透明 disabled是否禁用 loading加载状态 fromTyoe按钮响应-->
 
-<!-- <button type="primary" plain="true">Content</button> 绿色字体透明背景-->
-<!-- <button type="primary" disabled="true">Content</button> 字体背景灰色状态-->
-<!-- <button type="primary" loading="true">Content</button> 加z载小圈-->
-<!-- <button type="primary" fromTyoe="reset">Content</button> 点击按钮会有响应效果灰色状态切换-->
+    <!-- <button type="primary" plain="true">Content</button> 绿色字体透明背景-->
+    <!-- <button type="primary" disabled="true">Content</button> 字体背景灰色状态-->
+    <!-- <button type="primary" loading="true">Content</button> 加z载小圈-->
+    <!-- <button type="primary" fromTyoe="reset">Content</button> 点击按钮会有响应效果灰色状态切换-->
 
-<!-- 四个小按钮横排排列 一个view里面横排，不同view之间为列，竖排-->
+    <!-- 四个小按钮横排排列 一个view里面横排，不同view之间为列，竖排-->
 
-<image src="../../images/water.png" mode="aspectFit" ></image>
-<image src="../../images/heart.png" mode="aspectFit"></image>
-<image src="../../images/star.png"  mode="aspectFit" ></image>
-<image src="../../images/label.png" mode="aspectFit" ></image>
- </view>
+    <image src="../../images/water.png" mode="aspectFit" bindtap="bindViewTap"></image>
+    <image src="../../images/heart.png" mode="aspectFit" bindtap="bindTakeClothes"></image>
+    <image src="../../images/star.png"  mode="aspectFit" bindtap="bindPayPage"></image>
+    <image src="../../images/label.png" mode="aspectFit" ></image>
+    </view>
 
-<!-- 按钮参数 绑定的事件名称：bindViewTap-->
-<view class="but">
-<button size="mini" type="default" fromTyoe="reset" bindtap="bindViewTap" class="wash" >洗衣</button>
+    <!-- 按钮参数 绑定的事件名称：bindViewTap-->
+    <view class="but">
+    <button size="mini" type="default" fromTyoe="reset" bindtap="bindViewTap" class="wash" >
+    <text>洗衣</text>
+    </button>
 
-<!--图标玫瑰花样式 <image class="iconimage" src="../../images/icon.ico/"></image> -->
+    <!--图标玫瑰花样式 <image class="iconimage" src="../../images/icon.ico/"></image> -->
 
-<button size="mini" type="default" fromTyoe="reset" bindtap="bindTakeClothes" class="take" >取衣</button>
-
-
-<button size="mini" type="default" fromTyoe="reset" bindtap="bindPayPage" class="pay">充值</button>
-
-
-  <button size="mini" type="default" fromTyoe
-="reset">预约</button>
-</view>
+    <button size="mini" type="default" fromTyoe="reset" bindtap="bindTakeClothes" class="take" >
+    <text>取衣</text>
+    </button>
 
 
-<!-- <button size="mini" type="default" fromTyoe
-="reset">店员</button> -->
- 
-
-<!-- 广告区 -->
-<view class="advert">
-<image mode="scaleToFill" src="../../images/green.png">
-</image>
-</view>
-<view class="bnt">
-<button size="mini" type="default" fromTyoe="reset">门店</button>
-
-<button size="mini" type="default" fromTyoe="reset" >智能柜</button>
-<!-- 门店 智能柜 分区按钮 -->
-<!-- style="block" wx:if="{{type=='门店'}}" bindtap="chooseShop" -->
-<!-- style="none" wx:if="{{'智能柜'}}" bindtap="chooseArk" -->
-
-<!-- <view class="shop" data-current="0" bindtap="checkCurrent">
-门店 -->
-</view>
-
-<!-- 门店信息+地图 -->
-
-<!-- 门店 滚动条是最外边的view 包含里面的页面或文字 -->
-<view class="flex-page" bindtap="md1" >
-<!-- style="white-space: pre-line;"文字上方留出空白段 -->
-<view class="contain">
-<text class="text1">
-万达公馆店
-电话：0816-2996429
-地址：万达公馆A区2栋-2铺
-</text>
-</view>
-
-<view class="contain">
-<text class="text2">
-二十一世纪花园店
-电话：0816-2202766
-地址：绵阳市普明南路东段21世纪花园
-</text>
-</view>
+    <button size="mini" type="default" fromTyoe="reset" bindtap="bindPayPage" class="pay">
+    <text>充值</text>
+    </button>
 
 
-<view class="contain">
-<text class="text3">
-树高卡地亚店
-电话：0816-2883286
-地址：绵阳市创业大道树高卡地亚1-1-11号
-</text>
-</view>
-
-<view class="contain">
-<text class="text4">
-阳光曼哈顿店
-电话：0816-2847075
-地址：绵阳市涪城区御林街49号
-</text>
-</view>
-
-<view class="contain">
-<text class="text5">
-奥林春天店
-电话：0816-2853626
-地址：绵阳市奥林春天二期4栋103-3号
-</text>
-</view>
-
-<view class="contain">
-<text class="text6">
-长虹世纪店
-电话：0816-2380327
-地址：绵阳市涪城区平政七队迪亨酒店斜对面
-</text>
-</view>
-
-<view class="contain">
-<text class="text7">
-华润中央公园店
-电话：0816-2199129
-地址：绵阳市科创园区华润中央公园
-</text>
-</view>
-
-<view class="contain">
-<text class="text8">
-南河店
-电话：0816-2176429
-地址：绵阳市南河金佳城南名著
-</text>
-</view>
-
-<view class="contain">
-<text class="text9">
-福临大都会店
-电话：0816-2924253
-地址：绵阳市富临大都会5栋1单元6号
-</text>
-</view>
-</view>
+      <button size="mini" type="default" fromTyoe="reset">
+    <text>预约</text>
+    </button>
+    </view>
 
 
-<!-- 底部导航栏 固定底部按钮可以写在view或者buttom中  
-style="position:fixed;top:0;"-->
-<view class="page1" >
-<button size="default" type="default" form-type="reset">首页</button>
+    <!-- <button size="mini" type="default" fromTyoe
+    ="reset">店员</button> -->
+    
 
-<navigator url="../index/QR/QR?title=QR" hover-class="QR-hover" class="navi">
-<button class="QR" size="default" type="default"  form-type="reset" >
-<image src="../../images/QR.png"></image>
-</button>
-</navigator>
+    <!-- 广告区 -->
+    <!-- <view class="advert">
+    <image mode="scaleToFill" src="../../images/green.png">
+    </image>
+    </view> -->
+   
+
+    <!-- 门店信息+地图 -->
+
+    <!-- 门店 滚动条是最外边的view 包含里面的页面或文字 -->
+   <view class="bnt">
+    <button size="mini" type="default" fromTyoe="reset">
+    <text>门店</text>
+    </button>
+
+    <button size="mini" type="default" fromTyoe="reset" >
+    <text>智能柜</text>
+    </button>
+    <!-- 门店 智能柜 分区按钮 -->
+    <!-- style="block" wx:if="{{type=='门店'}}" bindtap="chooseShop" 
+
+-->
+    <!-- style="none" wx:if="{{'智能柜'}}" bindtap="chooseArk" -->
+
+    <!-- <view class="shop" data-current="0" bindtap="checkCurrent">
+    门店 -->
+    </view>
+
+     <view class="flex-page" bindtap="md1" >
+    <!-- style="white-space: pre-line;"文字上方留出空白段 -->
+    <view class="contain">
+    <text class="text1">
+    万达公馆店
+    电话：0816-2996429
+    地址：万达公馆A区2栋-2铺
+    </text>
+    </view>
+
+    <view class="contain">
+    <text class="text2">
+    二十一世纪花园店
+    电话：0816-2202766
+    地址：绵阳市普明南路东段21世纪花园
+    </text>
+    </view>
 
 
-<button size="default" type="default" form-type="reset" >我的</button>
-</view>
+    <view class="contain">
+    <text class="text3">
+    树高卡地亚店
+    电话：0816-2883286
+    地址：绵阳市创业大道树高卡地亚1-1-11号
+    </text>
+    </view>
+
+    <view class="contain">
+    <text class="text4">
+    阳光曼哈顿店
+    电话：0816-2847075
+    地址：绵阳市涪城区御林街49号
+    </text>
+    </view>
+
+    <view class="contain">
+    <text class="text5">
+    奥林春天店
+    电话：0816-2853626
+    地址：绵阳市奥林春天二期4栋103-3号
+    </text>
+    </view>
+
+    <view class="contain">
+    <text class="text6">
+    长虹世纪店
+    电话：0816-2380327
+    地址：绵阳市涪城区平政七队迪亨酒店斜对面
+    </text>
+    </view>
+
+    <view class="contain">
+    <text class="text7">
+    华润中央公园店
+    电话：0816-2199129
+    地址：绵阳市科创园区华润中央公园
+    </text>
+    </view>
+
+    <view class="contain">
+    <text class="text8">
+    南河店
+    电话：0816-2176429
+    地址：绵阳市南河金佳城南名著
+    </text>
+    </view>
+
+    <view class="contain">
+    <text class="text9">
+    福临大都会店
+    电话：0816-2924253
+    地址：绵阳市富临大都会5栋1单元6号
+    </text>
+    </view>
+    </view>
 
 
+    <!-- 底部导航栏 固定底部按钮可以写在view或者buttom中  
+    style="position:fixed;top:0;"-->
+    <!-- <view class="page1" > -->
+    <!-- <button size="default" type="default" form-type="reset" 
+
+class="main1">
+    <text>首页</text>
+    </button>
+
+    <navigator url="../index/QR/QR?title=QR" hover-class="QR-hover" 
+
+class="navi">
+    <button class="QR" size="default" type="default"  form-
+
+type="reset" >
+    <image src="../../images/QR.png"></image>
+    </button>
+    </navigator>
+
+
+    <button size="default" type="default" form-type="reset" >
+    <text>我的</text>
+    </button> -->
+    <!-- <view></view>
+    <view></view>
+    <view></view>
+  </view> -->
+
+  <view class="box1"><view>
+  <text>首页</text>
+  </view></view>
+  <navigator url="../index/QR/QR?title=QR" hover-class="QR-hover" class="navi">
+  <view class="box2">
+  <image src="../../images/QR.png"></image>
+  </view>
+   </navigator>
+  <view class="box3"><view>
+  <text> 我的</text>
+ </view></view>
  </view>

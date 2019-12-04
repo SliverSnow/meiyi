@@ -8,14 +8,25 @@ page {
   /* align-items: center; */
 }
 
+.main{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
 /* 轮播宽度 */
 .lunbo{
   width: 100%;
+  margin-bottom: 8rpx;
+}
+.lunbo>.swiper-item{
+  width: 100%;
+  /* display: flex; */
 }
 
 /* 轮播图片宽度 */
 .lunbo image{
   width: 100%;
+  height: 100%;
 }
 
 /* .button{
@@ -25,51 +36,78 @@ page {
 } 设置按钮居中并且纵向排列*/
 
 
-/* 图片尺寸适应参数间隔 */
+/* 图片尺寸适应参数间隔  可以设置第一个图标的宽高和左右边距*/
+.picture{
+  width: 100%;
+}
+.picture image:first-child{
+  width: 23%;
+  margin-left:2%;
+}
+.picture image:nth-child(3){
+  width: 23%;
+  margin-right:2%;
+}
+.picture image:last-child{
+  width: 22%;
+  margin-right:3%;
+}
 .picture image{
-  margin-top: 5px;
-  height: 80rpx;
-  width: 80rpx;
+  margin-top: 3rpx;
+  height: 77rpx;
+  width: 25%;
   justify-content: space-between;
-  padding-left: 50rpx;
-  padding-right: 50rpx;
 }
 /* background-size:contain;等比缩放 */
 
 /* 按钮适应间隔 */
+.but{
+  width: 100%;
+  height: 6%;
+  /* margin-bottom: 8rpx; */
+  justify-content: space-around;
+  border-bottom: 2px solid rgb(199, 233, 241);
+}
  .but button{
-   border: 0;
-   width: 25%;
-   height: 70rpx;
-   font-size: 33rpx;
-   color: rgb(4, 196, 4);
-   background-color: rgb(236, 231, 231);
-   justify-content: space-between;
-   padding-left: 60rpx;
-  padding-right: 60rpx;
-  /* background-color: transparent; */
+   width: 20%;
+  height: 100%;
+   font-size: 25rpx;
+   color: black;
+   margin-left: 4%;
+  background-color: transparent;
   /* 设置按钮透明且不触发边框线 */
  }
- .but{
-   font-size: 50rpx;
- }
+  .but button>text{
+    font-weight: 530;
+    font-size: 32rpx;
+    text-align: center;
+  }
 
 /* 广告区先用图片进行替代 */
 .advert{
   width: 100%;
+  height: 300rpx;
 }
 .advert image{
   width: 100%;
   height: 200rpx;
 }
 
+.bnt{
+  height: 65rpx;
+  border:1px solid red;
+}
 .bnt button{
+ background-color: rgb(236, 231, 231);
   /* 使用 flex 布局的话需要显式的声明 page页面已声明 */
-   border: 0;
    flex-direction: row; 
    justify-content: space-around;
    width: 50%;
+   height: 100%;
 /* 加上宽度可以左右排列 */
+}
+.bnt button>text{
+  font-size: 30rpx;
 }
 
 
@@ -83,15 +121,16 @@ page {
 /* 圈定小框框区域 并实现滚动条的幅度区域 内容过多便可以滑动 内容过少隐藏状态*/
 .flex-page {
   width: 100%;
-  height: 46%;
+  height: 49%;
   overflow:scroll;
-background-color: rgb(175, 166, 166);
+background-color: rgb(236, 231, 231);
   position: fixed;
-  bottom: 3%;
+  bottom: 10%;
+  border:1px solid black;
 }
 .contain{
 background-color: white;
-height: 200rpx;
+height: 176rpx;
 margin:20rpx 0 20rpx 0;
 }
 /* 测试边框绝对定位
@@ -122,16 +161,28 @@ bottom: 0; */
 /* 底部菜单导航栏 */
 
 .page1 {
-  display: flex;
   width: 100%;
-  height: 80rpx;
+  height: 88rpx;
   position: fixed;
   bottom: 0;
- 
+border:1px solid red;
+}
+.page1>view:first-child{
+  width: 14%;
+  border:1px solid red;
+  border-radius: 50%;
 }
 .page1 button{
 width: 33%;
-background-color: rgb(236, 231, 231);
+background-color: transparent;
+height: 100%;
+
+}
+.page1 button>text{
+  height: 100%;
+  font-size: 40rpx;
+
+
 }
 
 /* 图片按钮设置 */
@@ -151,4 +202,72 @@ background-color: rgb(236, 231, 231);
 /* 门店地址信息位置 */
 .text1{
   color: rgb(109, 104, 104);
+}
+.text9{
+  margin-bottom: 150%;
+}
+.QR{
+  border:1px solid red;
+  border-radius: 50%;
+  height: 100%;
+  position: absolute;
+  left:50%;
+}
+/* 下列导航栏 */
+.box1{
+  width: 40%;
+  height:5%;
+  text-align: center;
+  font-weight: 800;
+  position: fixed;
+  bottom: 0;
+  border-radius: 150rpx;
+  background-color: rgba(153, 238, 180, 0.541);
+  color:#AAAAAA;
+}
+.box1>view{
+  margin-top:5%; 
+}
+.box2{
+  width: 19%;
+  height:10%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  position: fixed;
+  border-radius: 50%;
+  right: 40%;
+  bottom: 0;
+  /* 镂空阴影 */
+  -moz-box-shadow:0px 0px 1px #4ef5a7; 
+  -webkit-box-shadow:0px 0px 1px #4ef5a7; 
+  box-shadow:0px 0px 1px #4ef5a7;
+}
+.box>text{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box2>image{
+  width: 90%;
+  height: 100%;
+  border-radius: 50%;
+}
+.box3{
+  width: 40%;
+  height:5%;
+  text-align: center;
+  font-weight: 800;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 150rpx;
+  background-color: rgba(153, 238, 180, 0.541);
+  color:#AAAAAA;
+}
+.box3>view{
+  margin-top:5%; 
 }

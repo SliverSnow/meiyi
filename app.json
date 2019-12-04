@@ -1,17 +1,19 @@
 {
   "pages": [
-    "pages/pay/pay",
-    "pages/choose/choose",
     "pages/index/index",
+    "pages/choose/choose",
+    
     "pages/index/QR/QR",
     "pages/wash/wash",
+  
     "pages/take/take",
+    "pages/pay/pay",
     "pages/wash/washpage/washpage"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#E6E6E6",
-    "navigationBarTitleText": "美依",
+    "navigationBarTitleText": "美一天洗衣",
     "navigationBarTextStyle": "black"
   },
   "cloud": true,
