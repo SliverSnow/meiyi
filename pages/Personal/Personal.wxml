@@ -1,0 +1,105 @@
+<!--pages/Personal/Personal.wxml-->
+<view class="personal">
+<!-- 上面的box -->
+<view class="box-top">
+<view class="box-top-img">
+<image src="../../images/bc.png"></image>
+</view>
+<view class="top-text">账号名：</view>
+<view class="top-vip">
+<text>会   员</text>
+</view>
+<view class="top-member">
+<text>退出登录</text>
+</view>
+
+
+
+</view>
+<!-- 我的订单模块 -->
+<view class="box">
+  <view class="box-dingdan">
+  <text>我的订单</text>
+  <text>查看全部订单</text>
+  <text>></text>
+  <!-- 订单小模块 -->
+    <view class="box-mokuai">
+      <view class="box-handle">
+      <view><image src="../../images/8.png"></image></view>
+      <text class="box-handle-text">待处理</text>
+      </view>
+
+      <view class="box-modify">
+      <view><image src="../../images/3.png"></image></view>
+      <text class="box-handle-text">订单修改</text>
+      </view>
+
+      <view class="box-complete">
+      <view><image src="../../images/6.4.png"></image></view>
+      <text class="box-handle-text">已完成</text>
+      </view>
+
+      <view class="box-evaluate">
+      <view><image src="../../images/2.png"></image></view>
+      <text class="box-handle-text">待评价</text>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="box-dingdan">
+  <text>我的钱包</text>
+  <text>查看交易明细</text>
+  <text>></text>
+  <!-- 订单小模块 -->
+    <view class="box-mokuai">
+      <view class="box-handle">
+      <view><image src="../../images/18.png"></image></view>
+      <text class="box-handle-text">充值</text>
+      </view>
+
+      <view class="box-modify">
+      <view bindtap=""><image src="../../images/13.png"></image></view>
+      <text class="box-handle-text">余额</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="box-dingdan">
+  <text>关于美一天</text>
+  <!-- 订单小模块 -->
+    <view class="box-mokuai">
+      <view class="box-handle">
+      <view><image src="../../images/23.png"></image></view>
+      <text class="box-handle-text">声明</text>
+      </view>
+
+      <view class="box-modify">
+      <view><image src="../../images/20.png"></image></view>
+      <text class="box-handle-text">问卷</text>
+      </view>
+
+      <view class="box-complete">
+      <view><image src="../../images/19.png"></image></view>
+      <text class="box-handle-text">服务</text>
+      </view>
+
+      <view class="box-evaluate">
+      <view><image src="../../images/22.png"></image></view>
+      <text class="box-handle-text">关于我们</text>
+      </view>
+
+    </view>
+  </view>
+</view>
+ <view class="page1" >
+      <button size="default" type="default" form-type="reset">首页</button>
+      <navigator url="../index/QR/QR?title=QR" hover-class="QR-hover" class="navi">
+        <button class="QR" size="default" type="default"  form-type="reset" >
+        <image src="../../images/QR.png"></image>
+        </button>
+      </navigator>
+      <button size="default" type="default" form-type="reset" >我的</button>
+    </view>
+</view>
+

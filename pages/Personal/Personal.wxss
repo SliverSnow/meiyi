@@ -1,0 +1,195 @@
+/* pages/Personal/Personal.wxss */
+.personal{
+  width: 100%;
+  height: 1400rpx;
+  border:  1px solid red;
+  position: relative;
+}
+.box-top{
+  width: 90%;
+  margin:0 auto;
+  height: 150rpx;
+  position: relative;
+}
+.box-top-img{
+  width: 20%;
+  height: 75%;
+  position: absolute;
+  top:10%;
+  left:0;
+  display: flex;
+}
+.box-top-img>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.top-text{
+  position: absolute;
+  left:26%;
+  top:40%;
+  font-size: 26rpx;
+}
+.top-vip{
+  width: 20%;
+  height: 4%;
+  position: fixed;
+  right:14%;
+  top:6%;
+  text-align: center;
+  border-radius: 150rpx;
+  background-color: #FFE161;
+}
+.top-vip text{
+  color: white;
+  font-size: 27rpx;
+}
+.top-member{
+  width: 20%;
+  height: 4%;
+  position: fixed;
+  right:14%;
+  top:1%;
+  text-align: center;
+  border-radius: 150rpx;
+  background-color: rgb(116, 241, 164);
+
+}
+.top-member text{
+  color: white;
+  font-size: 27rpx;
+}
+
+
+.box{
+  width: 90%;
+  height: 900rpx;
+  margin:0 auto;
+}
+.box-dingdan{
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  position: relative;
+  margin-bottom: 5%;
+}
+.box-dingdan>text:first-child{
+  font-size: 26rpx;
+  font-weight: 800;
+  position: absolute;
+  top:5%;
+  left:3%;
+}
+.box-dingdan>text:nth-child(2){
+  font-size: 20rpx;
+    position: absolute;
+    top:5%;
+    right:10%;
+    color: #AAAAAA;
+}
+.box-dingdan>text:nth-child(3){
+  font-size: 36rpx;
+    position: absolute;
+    top:0;
+    right:4%;
+    color: #AAAAAA;
+}
+.box-mokuai{
+  width: 100%;
+  height: 70%;
+ display: flex;
+  position: absolute;
+  top:30%;
+}
+.box-handle{
+  width: 22%;
+  height: 80%;
+  margin: 2% 0 0 2%;
+  text-align: center;
+}
+.box-handle>view{
+   width: 60%;
+  height: 60%;
+  margin: 5% 0 0 20%;
+}
+.box-handle>view>image{
+  width: 100%;
+  height: 100%;
+}
+.box-handle-text{
+  font-size: 22rpx;
+  color:black; 
+}
+.box-modify{
+  width: 22%;
+  height: 80%;
+  margin: 2% 0 0 2%;
+  text-align: center;
+}
+.box-modify>view{
+  width: 60%;
+  height: 60%;
+  margin: 5% 0 0 20%;
+}
+.box-modify>view>image{
+  width: 100%;
+  height: 100%;
+}
+.box-complete{
+  width: 22%;
+  height: 80%;
+  margin: 2% 0 0 2%;
+  text-align: center;
+}
+.box-complete>view{
+  width: 60%;
+  height: 60%;
+  margin: 5% 0 0 20%;
+}
+.box-complete>view>image{
+  width: 100%;
+  height: 100%;
+}
+.box-evaluate{
+  width: 22%;
+  height: 80%;
+  margin: 2% 0 0 2%;
+  text-align: center;
+}
+.box-evaluate>view{
+  width: 60%;
+  height: 60%;
+  margin: 5% 0 0 20%;
+}
+.box-evaluate>view>image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.page1 {
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  position: absolute;
+  bottom: 0;
+}
+.page1 button{
+width: 33%;
+background-color: rgb(248, 246, 246);
+}
+
+/* 图片按钮设置 */
+.navi {
+  width: 33%;
+}
+.navi button{
+  width: 100%;
+}
+/* 底部二维码图标按钮 */
+.page1 image{
+  margin-top: 7px;
+  height: 60rpx;
+  width: 70rpx;
+}

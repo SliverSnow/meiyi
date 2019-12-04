@@ -1,5 +1,4 @@
 /**index.wxss**/
-
 page {
   background: #f9f9f9;
   display: flex;
@@ -7,11 +6,9 @@ page {
   justify-content: space-around;
   /* align-items: center; */
 }
-
-.main{
+.world{
   width: 100%;
-  height: 100%;
-  position: fixed;
+  height: 1200rpx;
 }
 /* 轮播宽度 */
 .lunbo{
@@ -22,20 +19,11 @@ page {
   width: 100%;
   /* display: flex; */
 }
-
 /* 轮播图片宽度 */
 .lunbo image{
   width: 100%;
   height: 100%;
 }
-
-/* .button{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} 设置按钮居中并且纵向排列*/
-
-
 /* 图片尺寸适应参数间隔  可以设置第一个图标的宽高和左右边距*/
 .picture{
   width: 100%;
@@ -59,7 +47,6 @@ page {
   justify-content: space-between;
 }
 /* background-size:contain;等比缩放 */
-
 /* 按钮适应间隔 */
 .but{
   width: 100%;
@@ -71,7 +58,7 @@ page {
  .but button{
    width: 20%;
   height: 100%;
-   font-size: 25rpx;
+   font-size: 32rpx;
    color: black;
    margin-left: 4%;
   background-color: transparent;
@@ -82,143 +69,83 @@ page {
     font-size: 32rpx;
     text-align: center;
   }
-
-/* 广告区先用图片进行替代 */
-.advert{
-  width: 100%;
-  height: 300rpx;
+  /* 门店导航 */
+  .box{
+  height: 65%;
 }
-.advert image{
-  width: 100%;
-  height: 200rpx;
-}
-
-.bnt{
-  height: 65rpx;
-  border:1px solid red;
-}
-.bnt button{
- background-color: rgb(236, 231, 231);
-  /* 使用 flex 布局的话需要显式的声明 page页面已声明 */
-   flex-direction: row; 
-   justify-content: space-around;
-   width: 50%;
-   height: 100%;
-/* 加上宽度可以左右排列 */
-}
-.bnt button>text{
-  font-size: 30rpx;
-}
-
-
-/* 自定义button样式颜色 */
-/* 加上!important是为了将样式设为最高级别 */
-/* .bnt.active{
-  color: #fff !important;
-  background: #ff9537 !important;
-} */
-
-/* 圈定小框框区域 并实现滚动条的幅度区域 内容过多便可以滑动 内容过少隐藏状态*/
 .flex-page {
   width: 100%;
-  height: 49%;
+  height: 100%;
   overflow:scroll;
-background-color: rgb(236, 231, 231);
-  position: fixed;
-  bottom: 10%;
-  border:1px solid black;
+  background-color: rgb(248, 246, 246);
+}
+.tab {
+  float: left;
+  width:50%;
+  height: 100%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+ 
+.topTabSwiper {
+  height: 10%;
+  background-color: rgb(248, 246, 246);
+  font-size: 22px;
+  color: #63eec0;
+  zoom: 1;
+}
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ 
+.tabBorer {
+  background-color: #D3F1F8;
+  /* border-bottom: 1px solid #f00; */
+  height: 60%;
+  color: white;
+}
+.swiper {
+  width: 100%;
+  height:90%;
+}
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20rpx 0;
 }
 .contain{
 background-color: white;
-height: 176rpx;
-margin:20rpx 0 20rpx 0;
+height: 200rpx;
+margin:20rpx 0 0 0;
 }
-/* 测试边框绝对定位
-  position: absolute;
-  top: 0;
-  border: 1px solid black;  */
-.contain>.text1{
- height: 20rpx; 
- color: black;
+.contain>.text-box{
+  padding: 30rpx 0 0 0;
+  color: black;
 }
-/* 隐藏滚动条 */ 
-/* ::-webkit-scrollbar{ 
-    width: 0; 
-    height: 0; 
-    color: transparent; } */
-
-/* .flex-page view{ */
-  /* width: 200rpx;
-  height: 200rpx; */
-  /* font-size: 40rpx; */
-  /* color: white; */
-  /* text-align: center; */
-  /* line-height: 200rpx; */
-/* position: fixed; 
-bottom: 0; */
-/* } */
-
-/* 底部菜单导航栏 */
-
-.page1 {
-  width: 100%;
-  height: 88rpx;
-  position: fixed;
-  bottom: 0;
-border:1px solid red;
-}
-.page1>view:first-child{
-  width: 14%;
-  border:1px solid red;
-  border-radius: 50%;
-}
-.page1 button{
-width: 33%;
-background-color: transparent;
-height: 100%;
-
-}
-.page1 button>text{
-  height: 100%;
+.bI{
   font-size: 40rpx;
-
-
+  font-weight: 800;
+  margin-bottom:3%; 
 }
-
-/* 图片按钮设置 */
-.navi {
-  width: 33%;
+.bII{
+  margin-bottom:3%; 
+  color: #AAAAAA;
 }
-.navi button{
-  width: 100%;
+.bIII{
+  margin-bottom:3%; 
+  color: #AAAAAA;
 }
-/* 底部二维码图标按钮 */
-.page1 image{
-  margin-top: 7px;
-  height: 60rpx;
-  width: 70rpx;
-}
-
-/* 门店地址信息位置 */
-.text1{
-  color: rgb(109, 104, 104);
-}
-.text9{
-  margin-bottom: 150%;
-}
-.QR{
-  border:1px solid red;
-  border-radius: 50%;
-  height: 100%;
-  position: absolute;
-  left:50%;
-}
-/* 下列导航栏 */
+/* 下块的布局 */
 .box1{
   width: 40%;
-  height:5%;
+  height:6%;
   text-align: center;
   font-weight: 800;
+  font-size: 45rpx;
   position: fixed;
   bottom: 0;
   border-radius: 150rpx;
@@ -231,10 +158,6 @@ height: 100%;
 .box2{
   width: 19%;
   height:10%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   text-align: center;
   position: fixed;
   border-radius: 50%;
@@ -258,8 +181,9 @@ height: 100%;
 }
 .box3{
   width: 40%;
-  height:5%;
+  height:6%;
   text-align: center;
+  font-size: 45rpx;
   font-weight: 800;
   position: fixed;
   right: 0;
@@ -271,3 +195,5 @@ height: 100%;
 .box3>view{
   margin-top:5%; 
 }
+
+
