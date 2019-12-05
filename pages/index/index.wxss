@@ -58,7 +58,7 @@ page {
  .but button{
    width: 20%;
   height: 100%;
-   font-size: 32rpx;
+   font-size: 28rpx;
    color: black;
    margin-left: 4%;
   background-color: transparent;
@@ -195,5 +195,7 @@ margin:20rpx 0 0 0;
 .box3>view{
   margin-top:5%; 
 }
+
+
 
 

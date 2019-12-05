@@ -20,7 +20,7 @@
   <view class="picture">
     <image src="../../images/water.png" mode="aspectFit" ></image>
     <image src="../../images/heart.png" mode="aspectFit"></image>
-    <image src="../../images/star.png"  mode="aspectFit" ></image>
+    <image src="../../images/star.png"  mode="aspectFit" bindtap="payPage"></image>
     <image src="../../images/label.png" mode="aspectFit" ></image>
   </view>
 <!-- 按钮参数 绑定的事件名称：bindViewTap-->
@@ -34,7 +34,7 @@ src="../../images/icon.ico/"></image> -->
     <button size="mini" type="default" fromTyoe="reset" 
 
 bindtap="bindTakeClothes" class="take" >取衣</button>
-    <button size="mini" type="default" fromTyoe="reset" >充值</button>
+    <button size="mini" type="default" fromTyoe="reset" bindtap="payPage">充值</button>
       <button size="mini" type="default" fromTyoe
     ="reset">预约</button>
   </view>
@@ -75,7 +75,7 @@ bindtap="bindTakeClothes" class="take" >取衣</button>
     </swiper>
     </view>
     <!-- 最后 -->
-     <view class="box1">
+     <!-- <view class="box1">
         <view>首页</view>
         </view>
         <navigator url="../index/QR/QR?title=QR" hover-class="QR-hover" class="navi">
@@ -87,5 +87,6 @@ bindtap="bindTakeClothes" class="take" >取衣</button>
         <view class="box3">
         <view> 我的</view>
       </view>
-      </navigator>
+      </navigator> -->
+      
 </view>

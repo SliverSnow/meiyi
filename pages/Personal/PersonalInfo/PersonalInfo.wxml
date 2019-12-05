@@ -1,0 +1,25 @@
+<!--pages/Personal/PersonalInfo/PersonalInfo.wxml-->
+<view class="PersonalInfo">
+<!-- <image src="../../../images/24.jpg"></image> -->
+<!-- 头像修改 -->
+  <view class="portrait">
+    <image src="../../../images/bc.png" bindtap="chooseImage"></image>
+    <view class="header">点击修改头像</view>
+  </view>
+  <!-- 个人信息 -->
+  <view class="info">
+    <view class="info-name"><text>昵称：</text><input placeholder="看官" placeholder-style="color:#CACACA;"/></view>
+     <view class="info-set"><text>性别：</text><input placeholder="男" placeholder-style="color:#CACACA;"/></view>
+      <view class="info-birthday"><text>生日：</text><input placeholder="1992-07.26" placeholder-style="color:#CACACA;"/></view>
+    <view class="info-psw"><view>修改密码</view></view>
+
+  </view> 
+  <!-- 确认 -->
+  <view class="querst">
+  <view><view>确认</view></view>
+  <view><view>退出</view></view>
+
+  </view>
+
+
+</view>

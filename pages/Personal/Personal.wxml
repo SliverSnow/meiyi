@@ -2,7 +2,7 @@
 <view class="personal">
 <!-- 上面的box -->
 <view class="box-top">
-<view class="box-top-img">
+<view class="box-top-img" bindtap="bindHead">
 <image src="../../images/bc.png"></image>
 </view>
 <view class="top-text">账号名：</view>

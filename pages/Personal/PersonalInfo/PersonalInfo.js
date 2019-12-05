@@ -1,4 +1,4 @@
-// pages/Personal/Personal.js
+// pages/Personal/PersonalInfo/PersonalInfo.js
 Page({
 
   /**
@@ -7,11 +7,24 @@ Page({
   data: {
 
   },
-  bindHead: function () {
-    wx.navigateTo({
-      url: './PersonalInfo/PersonalInfo',
+
+  /**点击头像跳转本地相册绑定事件 */
+  chooseImage:function(){
+    wx.chooseImage({
+      count: 1,
+      sizeType: [],
+      sourceType: ['album','camera'],
+      success: function (res) { 
+  const tempFilePath=res.tempFilePaths[0];
+  _this.setData({
+    personImage:tempFilePath 
+  })
+      },
+      fail: function (res) { },
+      complete: function (res) { },
     })
   },
+ 
 
   /**
    * 生命周期函数--监听页面加载

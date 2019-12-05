@@ -1,12 +1,91 @@
 // pages/login/login.js
 Page({
 
+ 
+    /** 页面的初始数据
+     选择不同的金额，调用相对应的函数*/
+    data: {
+      un_click1:'money_box',
+      un_click2: 'money_box',
+      un_click3: 'money_box',
+      un_click4: 'money_box',
+      un_click5: 'money_box',
+      un_click6: 'money_box'
+  },
+    lv1:function(){
+    this.setData({
+      un_click2: 'money_box',
+      un_click3: 'money_box',
+      un_click4: 'money_box',
+      un_click5: 'money_box',
+      un_click6: 'money_box',
+      un_click1: 'money_box1'
+    })
+  },
+  lv2: function () {
+    this.setData({
+      un_click2: 'money_box1',
+      un_click3: 'money_box',
+      un_click4: 'money_box',
+      un_click5: 'money_box',
+      un_click6: 'money_box',
+      un_click1: 'money_box'
+    })
+  },
+  lv3: function () {
+    this.setData({
+      un_click2: 'money_box',
+      un_click3: 'money_box1',
+      un_click4: 'money_box',
+      un_click5: 'money_box',
+      un_click6: 'money_box',
+      un_click1: 'money_box'
+    })
+  },
+  lv4: function () {
+    this.setData({
+      un_click2: 'money_box',
+      un_click3: 'money_box',
+      un_click4: 'money_box1',
+      un_click5: 'money_box',
+      un_click6: 'money_box',
+      un_click1: 'money_box'
+    })
+  },
+  lv5: function () {
+    this.setData({
+      un_click2: 'money_box',
+      un_click3: 'money_box',
+      un_click4: 'money_box',
+      un_click5: 'money_box1',
+      un_click6: 'money_box',
+      un_click1: 'money_box'
+    })
+  },
+  lv6: function () {
+    this.setData({
+      un_click2: 'money_box',
+      un_click3: 'money_box',
+      un_click4: 'money_box',
+      un_click5: 'money_box',
+      un_click6: 'money_box1',
+      un_click1: 'money_box'
+    })
+  },
+  
+  
+
+
+
+
+
   /**
    * 页面的初始数据
    */
   data: {
 
   },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -26,7 +105,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+wx.setTabBarItem({
+  index: 0,
+})
   },
 
   /**

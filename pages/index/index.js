@@ -57,6 +57,15 @@ Page({
       url: '../take/take',
     })
   },
+
+  //充值页面跳转
+  payPage:function(){
+wx.navigateTo({
+  url: '../pay/pay',
+})
+  },
+
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -83,4 +92,18 @@ Page({
       })
     }
   }
+
+ 
 })
+//   wx.getSystemInfo({
+// success: function (res) {
+//   var clientHeight = res.windowWidth,
+//     clientWidth = res.windowWidth,
+//     rpxR = 750 / clientWidth,
+//   var calc = clientHeight * rpxR;
+//   console.log(calc)
+//   that.setData({
+//     winHeight: calc
+//   });
+// },
+//   })
