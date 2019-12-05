@@ -30,14 +30,14 @@ Page({
     takeSession: false,
     requestResult: ''
   },
-  onShowAddress: function (e) {
-    var latitude = e.target.dataset.item.Latitude;
-    var longitude = e.target.dataset.item.Longitude;
-    var param = "latitude=" + latitude + "&longitude=" + longitude;
-    wx.navigateTo({
-      url: '../map/map?' + param,
-    })
-  },
+  // onShowAddress: function (e) {
+  //   var latitude = e.target.dataset.item.Latitude;
+  //   var longitude = e.target.dataset.item.Longitude;
+  //   var param = "latitude=" + latitude + "&longitude=" + longitude;
+  //   wx.navigateTo({
+  //     url: '../map/map?' + param,
+  //   })
+  // },
   swiperChange: function (e) {
     this.setData({
       currentSwiper: e.detail.current
