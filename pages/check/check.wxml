@@ -1,0 +1,39 @@
+<!--pages/check/check.wxml-->
+<view class="checkPage">
+<view class="text">格口选择</view>
+<view class="checkPage2" >
+<view id="panel" class="flex-column" >
+  <view class="flex-cell flex-row">
+    <button class="flex-cell flex-row" hover-class="btn-hover">1</button>
+     <button class="flex-cell flex-row" hover-class="btn-hover">2</button>
+      <button class="flex-cell flex-row" hover-class="btn-hover">3</button>
+       <button class="flex-cell flex-row" hover-class="btn-hover">4</button>
+  
+  </view>
+  <view class="flex-row flex-cell">
+      <button class="flex-cell flex-row" hover-class="btn-hover">5</button>
+     <button class="flex-cell flex-row" hover-class="btn-hover">6</button>
+      <button class="flex-cell flex-row" hover-class="btn-hover">7</button>
+       <button class="flex-cell flex-row" hover-class="btn-hover">8</button>
+  </view>
+  <view class="flex-row flex-cell">
+      <button class="flex-cell flex-row" hover-class="btn-hover">9</button>
+     <button class="flex-cell flex-row" hover-class="btn-hover">10</button>
+      <button class="flex-cell flex-row" hover-class="btn-hover">11</button>
+       <button class="flex-cell flex-row" hover-class="btn-hover">12</button>
+  </view>
+  <view class="flex-row flex-cell">
+   <button class="flex-cell flex-row" hover-class="btn-hover">13</button>
+     <button class="flex-cell flex-row" hover-class="btn-hover">14</button>
+      <button class="flex-cell flex-row" hover-class="btn-hover">15</button>
+       <button class="flex-cell flex-row" hover-class="btn-hover">16</button>
+  </view>
+</view>
+</view>
+
+<view class="time">暂存时间</view>
+  <selector selectData="{{position}}" class="sele"></selector>
+1
+
+</view>
+

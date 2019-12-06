@@ -16,10 +16,17 @@ Page({
     ],
     polist: [
       { name: "1958 - 一期", phone: "1958 - 一期", posion: "null" },
-      { name: "1958 - 一期", phone: "1958 - 一期", posion: "null" },
-      { name: "1958 - 一期", phone: "1958 - 一期", posion: "null" },
-      { name: "1958 - 一期", phone: "1958 - 一期", posion: "null" },
-      { name: "1958 - 一期", phone: "1958 - 一期", posion: "null" },
+      { name: "1958 - 二期", phone: "1958 - 二期", posion: "null" },
+      { name: "1958 - 三期", phone: "1958 - 三期", posion: "null" },
+      { name: "天骄摩尔", phone: "天骄摩尔", posion: "null" },
+      { name: "小岛一期", phone: "汉龙小岛一期", posion: "null" },
+      { name: "小岛二期", phone: "汉龙小岛二期", posion: "null" },
+      { name: "枫景398", phone: "枫景398", posion: "null" },
+      { name: "长虹国际城一期", phone: "长虹国际城一期", posion: "null" },
+      { name: "长虹国际城二期", phone: "长虹国际城二期", posion: "null" },
+      { name: "长虹国际城三期", phone: "长虹国际城三期", posion: "null" },
+      { name: "奥林春天服务中心", phone: "奥林春天服务中心", posion: "null" },
+      { name: "长虹世纪城", phone: "长虹世纪城", posion: "null" },
     ],
     currentSwiper: 0,
     autoplay: true,
@@ -65,13 +72,16 @@ wx.navigateTo({
 })
   },
 
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
+  
   },
+
   //获取当前滑块的index
   bindchange: function (e) {
     const that = this;

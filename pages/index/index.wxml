@@ -89,4 +89,5 @@ bindtap="bindTakeClothes" class="take" >取衣</button>
       </view>
       </navigator> -->
       
+      
 </view>

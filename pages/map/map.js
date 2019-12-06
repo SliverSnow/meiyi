@@ -1,17 +1,37 @@
-// paes/wash/wash.js
+// pages/map/map.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    longitude: 0,
+    latitude: 0,
+    markers: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    var that = this;
+    var latitude = options.latitude;
+    var longitude = options.longitude;
+    var markers = [{
+      iconPath: "/image/location.png",
+      id: 0,
+      latitude: latitude,
+      longitude: longitude,
+      width: 22,
+      height: 28
+    }];
+
+    that.setData({
+      latitude: latitude,
+      longitude: longitude,
+      markers: markers,
+    });
 
   },
 

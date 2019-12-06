@@ -1,0 +1,61 @@
+/* pages/text/text.wxss */
+.checkPage{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: fixed;
+
+}
+.text{
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+}
+
+.checkP2{
+  color: rgb(83, 204, 124);
+  
+}
+
+#panel{
+  height:720rpx;
+  background:#fff;
+  position: relative;
+}
+
+#panel text{
+  line-height: 142rpx;
+  border-right: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(140, 250, 169);
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flex-cell{
+  flex: 1;
+}
+
+.btn-hover{
+  
+  height: 180rpx;
+  box-shadow:0px 0px 8px white; 
+  background-color: rgb(206, 244, 255);
+}
+/* 镂空按钮 点击阴影不宜太深 */
+
+.time{
+  text-align: left;
+  margin-top: 15rpx;
+}
+

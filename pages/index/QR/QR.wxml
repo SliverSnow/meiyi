@@ -20,7 +20,10 @@
 </view>
 
 <view>
+<navigator url="../../check/check?title=check" hover-class="check-hover">
 <button size="default" type="primary" class="btt3">寄存</button>
+</navigator>
+
 </view>
 
 </view>

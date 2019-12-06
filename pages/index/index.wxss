@@ -91,7 +91,7 @@ page {
   height: 10%;
   background-color: rgb(248, 246, 246);
   font-size: 22px;
-  color: #63eec0;
+  color: rgb(69, 240, 174);
   zoom: 1;
 }
  

@@ -1,44 +1,44 @@
-{
-  "pages": [
-   
-    "pages/index/index",
-    "pages/choose/choose",
-    "pages/Personal/Personal",
-    "pages/index/QR/QR",
-    "pages/wash/wash",
-    "pages/pay/pay",
-    "pages/take/take",
-    "pages/Personal/PersonalInfo/PersonalInfo",
-    "pages/wash/washpage/washpage"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#E6E6E6",
-    "navigationBarTitleText": "美一天洗衣",
-    "navigationBarTextStyle": "black"
-  },
-  "cloud": true,
-  "sitemapLocation": "sitemap.json",
-  "tabBar": {
-"color": "#a9b7b7",
-"selectedColor": "#11cd6e",
-"borderStyle": "black",
-"backgroundColor": "#ffffff",
-"list": [
-{
-"pagePath": "pages/index/index",
-"text": "首页"
-},
-{
-"pagePath": "pages/index/QR/QR",
-"iconPath": "./images/QR.png"
-},
-{
-"pagePath": "pages/Personal/Personal",
-"text": "我的"
-}
-]
-}
-
+    {
+      "pages": [
+        "pages/check/check",
+        "pages/index/index",
+        "pages/choose/choose",
+        "pages/Personal/Personal",
+        "pages/index/QR/QR",
+        "pages/wash/wash",
+        "pages/pay/pay",
+        "pages/take/take",
+        "pages/Personal/PersonalInfo/PersonalInfo",
+        "pages/wash/washpage/washpage"
+        
+      ],
+      "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#E6E6E6",
+        "navigationBarTitleText": "美一天洗衣",
+        "navigationBarTextStyle": "black"
+      },
+      "cloud": true,
+      "sitemapLocation": "sitemap.json",
+      "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#11cd6e",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+          {
+            "pagePath": "pages/index/index",
+            "text": "首页"
+          },
+          {
+            "pagePath": "pages/index/QR/QR",
+            "iconPath": "./images/QR.png"
+          },
+          {
+            "pagePath": "pages/Personal/Personal",
+            "text": "我的"
+          }
+        ]
+      }
   
-}
+    }
