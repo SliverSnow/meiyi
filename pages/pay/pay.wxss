@@ -78,7 +78,7 @@ background-color: rgb(199, 233, 241);
 }
 /* 未点击时的button样式
 覆盖即可只保留点击时的样式哦 */
-.money_box
+/* .money_box
 {font-size: 25rpx;
   height: 130rpx;
   width: 215rpx;
@@ -90,7 +90,7 @@ background-color: rgb(199, 233, 241);
   background-color: white;
   margin-bottom: 20rpx;
   
-} 
+}  */
 /* 点击时的样式*/
 .money_box1
 {

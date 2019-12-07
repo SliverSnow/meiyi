@@ -1,8 +1,5 @@
 //app.js
 App({
-
-  
-
   // login: function () {//封装成方法，方便在小程序其他页面调用
   //   console.log("进入登录-------")
   //   var that = this;
@@ -59,13 +56,9 @@ App({
   //   })
   // },
 
-
-
-
-
-
   onLaunch: function () {
-
+    var amapFile = require('..­/libs/amap-wx.js');
+    //如：..­/..­/libs/amap-wx.js
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
