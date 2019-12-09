@@ -1,11 +1,14 @@
 /* pages/selector/selector.wxss */
-/* 下拉选择框的样式 */
+/* 下拉选择框的样式  下拉框白色方格*/
 .selectBox{ 
-  width: 50%;
+  width: 60%;
   height:1.5rem;
-  border:2px solid black;
+  border:2px solid red;
   border-radius: 20rpx;
- position: relative; padding-left: 10rpx} 
+ position: relative; 
+ padding-left: 10rpx
+ } 
+
 .selectBox .select{
    box-sizing: border-box; 
    width: 100%; 
@@ -19,7 +22,6 @@
     color:black;
      line-height: 28rpx; 
      flex: 1; 
-    
      } 
 
 .selectBox .select .select_img{

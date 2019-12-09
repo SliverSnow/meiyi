@@ -56,16 +56,25 @@
 
 /* 按钮样式=按钮的点击效果 阴影的大小*/
 .btn-hover{
+  height: 150rpx;
+  width: 747rpx;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid rgb(206, 244, 255);
-  height: 100%;
+
   box-shadow:0px 0px 8px white; 
   background-color: rgb(206, 244, 255);
 }
-/* 镂空按钮 点击阴影不宜太深 */
+
+/* 镂空按钮 点击阴影不宜太深  <view style="default""> △○</view> */
 
 .time{
   text-align: left;
-  margin-top: 15rpx;
+  margin-top: 40rpx;
   display: flex;
 flex-direction: column;
 position: relative;
@@ -74,5 +83,28 @@ margin-left: 0rpx;
 }
 .time text{
   position: absolute;
+}
+
+.bo{
+    height: 0;
+  width: 0;
+  border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid blue;
+  /* border-radius: 250rpx; */
+  /* background-color: rgb(104, 226, 220); */
+
+
+/* padding:0.1px; */
+background-clip:content-box;
+/* border:2px solid #92b901; */
+ 
+}
+.bo button{
+   cursor: row-resize;
+  height: 30rpx;
+  width: 30rpx;
+  background-color: black;
 }
 

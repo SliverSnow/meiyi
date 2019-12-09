@@ -13,7 +13,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    selectShow: false,//控制下拉列表的显示隐藏，false隐藏、true显示
+    // hidden="{{selectShow}}",
+    selectShow: true,//控制下拉列表的显示隐藏，false隐藏、true显示
     index: 0,//选择的下拉列表下标
   },
 
