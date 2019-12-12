@@ -73,38 +73,37 @@
 /* 镂空按钮 点击阴影不宜太深  <view style="default""> △○</view> */
 
 .time{
-  text-align: left;
-  margin-top: 40rpx;
+  
+ width: 100%;
+  height: 42%;
+  margin-top: 2%;
   display: flex;
-flex-direction: column;
-position: relative;
-bottom: 2%;
-margin-left: 0rpx;
+
 }
-.time text{
+.time>text{
+  margin-top: 20rpx;
   position: absolute;
+  margin-left: 60rpx;
+  border: 1px solid #fff;
+}
+.sele{
+  margin-top: 10rpx;
 }
 
-.bo{
-    height: 0;
-  width: 0;
-  border-top: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-left: 50px solid blue;
-  /* border-radius: 250rpx; */
-  /* background-color: rgb(104, 226, 220); */
-
-
-/* padding:0.1px; */
-background-clip:content-box;
-/* border:2px solid #92b901; */
- 
+.alert{
+  position: absolute;
+  bottom: 0rpx;
+  height: 60rpx;
+  width: 70%;
+  border: 2px solid #D3F1F8;
+  border-radius: 20rpx;
+  margin-left: 145rpx;
+  background-color: white;
 }
-.bo button{
-   cursor: row-resize;
-  height: 30rpx;
-  width: 30rpx;
-  background-color: black;
+.alert>text{
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin:  2% 0 0 0;
 }
 

@@ -1,22 +1,26 @@
 /* pages/selector/selector.wxss */
-/* 下拉选择框的样式  下拉框白色方格*/
+/* 下拉选择框的样式  下拉框白色方格 框里面的小框*/
 .selectBox{ 
   width: 60%;
   height:1.5rem;
-  border:2px solid red;
+  border:2px solid rgb(185, 252, 158);
   border-radius: 20rpx;
- position: relative; 
- padding-left: 10rpx
+position: fixed;
+right: 0rpx;
+ 
  } 
 
+
 .selectBox .select{
-   box-sizing: border-box; 
    width: 100%; 
    height: 100%; 
    border-radius: 8rpx;
     display: flex;
      align-items: center; 
-     padding: 0 10rpx; } 
+     
+     } 
+
+     /* 框内字体 */
 .selectBox .select .select_text{
    font-size: 35rpx;
     color:black;
@@ -24,29 +28,31 @@
      flex: 1; 
      } 
 
+/* 图片属性 */
 .selectBox .select .select_img{
    width: 30rpx; 
    height: 30rpx; 
    display: block; 
-   transition:transform 0.3s; }
+   transition:transform 0.3s; 
+   }
 
  .selectBox .select .select_img_rotate{
     transform:rotate(180deg);
      } 
 
-
+/* 下拉的变色区域框 */
 .selectBox .optionBox{
    position: absolute;
     top: calc(100%);
      width: 100%;
       box-sizing: border-box; 
-      height: 0;
+      height: 1000rpx;
        overflow-y: auto;
         background: #fff; 
         transition: height 0.3s;
-         border-left:2px solid black; 
-         border-right:2px solid black;
-         border:1px solid black ;
+         border-left:2px solid rgb(185, 252, 158); 
+         border-right:2px solid rgb(185, 252, 158);
+         border:1px solid rgb(185, 252, 158) ;
          z-index:9999
          } 
 

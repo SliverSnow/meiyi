@@ -1,0 +1,18 @@
+/* pages/text/text.wxss */
+.page{
+
+  height: 350rpx;
+  width: 745rpx;
+  border: 1px solid black;
+}
+
+.page text{
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+}
+
+.page1{
+  height: 50rpx;
+  width: 250rpx;
+  border: 1px solid black;
+}

@@ -1,10 +1,12 @@
     {
       "pages": [
         "pages/check/check",
-        "pages/index/index",
         "pages/choose/choose",
-        "pages/Personal/Personal",
+        "pages/index/index",
+        "pages/text/text",
         "pages/index/QR/QR",
+        
+        "pages/Personal/Personal",
         "pages/wash/wash",
         "pages/pay/pay",
         "pages/take/take",
@@ -14,12 +16,11 @@
       ],
       "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#E6E6E6",
+        "navigationBarBackgroundColor": "#D3F1F8",
         "navigationBarTitleText": "美一天洗衣",
         "navigationBarTextStyle": "black"
       },
-      "cloud": true,
-      "sitemapLocation": "sitemap.json",
+
       "tabBar": {
         "color": "#a9b7b7",
         "selectedColor": "#11cd6e",
@@ -39,6 +40,7 @@
             "text": "我的"
           }
         ]
-      }
-  
+      },
+            "cloud": true,
+            "sitemapLocation": "sitemap.json"
     }

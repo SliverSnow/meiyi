@@ -2,10 +2,11 @@ Component({
   /**
    * 组件的属性列表
    */
+
   properties: {
     selectData: { //下拉列表的数据
-      type: Array,
-      value: [] //初始数据,可通过属性修改
+      type: [],
+      value: [1,2,3], //初始数据,可通过属性修改
     },
   },
 
@@ -33,6 +34,7 @@ Component({
         index: Index,
         selectShow: !this.data.selectShow
       });
+
     }
   }
 })

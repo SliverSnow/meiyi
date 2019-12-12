@@ -32,10 +32,15 @@
 </view>
 
 <view class="time">
-<text></text>
-<selector selectData="{{position}}" class="sele"></selector></view>
+<text>暂存时间</text>
+<selector selectData="{{position}}" class="sele"></selector>
+<view class="alert">
+<text>感谢你暂存衣物到美一天智能柜</text>
+ </view>
+</view>
 
-<view class="bo"></view>
 
 </view>
+
+
 
